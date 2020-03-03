@@ -1,0 +1,13 @@
+<h1></h1>
+{{#each idea}}
+<div class="card w-50 my-3">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <p class="card-text">{{details}}</p>
+    <a href="ideas/edit/{{id}}" class="btn btn-primary">Edit</a>
+    <a class="btn btn-danger delete text-white" data-id="{{id}}">Delete</a>
+  </div>
+</div>
+{{else}}
+<h1>No idea added</h1>
+{{/each}}
